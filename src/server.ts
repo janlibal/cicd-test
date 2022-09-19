@@ -16,7 +16,7 @@ app.get('/', (req: Request, res: Response, next: NextFunction) => {
 }) 
 
 //app.listen(PORT, (): void => console.log(`running on port ${PORT}`))
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
     console.log(`Server started on port: ${port}`)
 })
 
